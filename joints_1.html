@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Joint &amp; Tendon Pain Embolization in NYC (Knee, Hip, Shoulder, Foot) | Dr. Vairavamurthy</title>
+<meta name="description" content="Outpatient embolization for knee, hip and shoulder arthritis, frozen shoulder, outer hip pain and plantar fasciitis, with no incision. New York City.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://drvairavamurthy.com/joints">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Joint &amp; Tendon Pain Embolization in NYC (Knee, Hip, Shoulder, Foot) | Dr. Vairavamurthy">
+<meta property="og:description" content="Outpatient embolization for knee, hip and shoulder arthritis, frozen shoulder, outer hip pain and plantar fasciitis, with no incision. New York City.">
+<meta property="og:url" content="https://drvairavamurthy.com/joints">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one long scroll. Dark angiogram-style hero with a drawn vessel tree, then light procedure cards, a four-step sequence, about, FAQ and a single-box contact form. */
+:root {
+  --font-display: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --font-body: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --bg: #F1F6F7;
+  --surface: #FFFFFF;
+  --ink: #0B2530;
+  --muted: #4A636E;
+  --line: #D2DEE2;
+  --accent: #0B6E7F;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #DCEDF0;
+
+  --hero-bg: #082029;
+  --hero-fg: #E9F4F6;
+  --hero-muted: #9FBBC4;
+  --hero-line: #27434E;
+  --hero-cta: #5ED6E6;
+  --hero-cta-ink: #06222A;
+  --vessel: #D3ECF1;
+  --vessel-treated: #5ED6E6;
+
+  --ph-bg: #FFEFAE;
+  --ph-fg: #5A4500;
+  --focus: #0B6E7F;
+
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #08161C; --surface: #0F2630; --ink: #E6F1F4; --muted: #9DB4BC; --line: #20404B;
+    --accent: #4FC3D4; --accent-ink: #05222A; --accent-soft: #123541;
+    --hero-bg: #0C2A35; --hero-line: #2A4955;
+    --ph-bg: #4A3B00; --ph-fg: #FFE79A; --focus: #4FC3D4;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #08161C; --surface: #0F2630; --ink: #E6F1F4; --muted: #9DB4BC; --line: #20404B;
+  --accent: #4FC3D4; --accent-ink: #05222A; --accent-soft: #123541;
+  --hero-bg: #0C2A35; --hero-line: #2A4955;
+  --ph-bg: #4A3B00; --ph-fg: #FFE79A; --focus: #4FC3D4;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 10; background: var(--bg);
+}
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+
+.wrap {
+  width: 100%; max-width: 1120px; margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+section[id] { scroll-margin-top: 76px; }
+a { color: var(--accent); }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 3px; }
+
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; line-height: 1.12; margin: 0; text-wrap: balance; }
+h2 { font-size: clamp(1.9rem, 3.6vw, 2.6rem); letter-spacing: -0.01em; }
+h3 { font-size: 1.45rem; line-height: 1.2; }
+p { margin: 0; }
+.eyebrow {
+  font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted);
+}
+.ph { background: var(--ph-bg); color: var(--ph-fg); padding: 0.05em 0.35em; border-radius: 3px; }
+
+/* Header */
+.site-header {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  background: var(--bg); border-bottom: 1px solid var(--line);
+}
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
+.brand { font-family: var(--font-display); font-size: 1.25rem; color: var(--ink); text-decoration: none; white-space: nowrap; }
+.brand span { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-left: 10px; }
+.nav { display: flex; align-items: center; gap: 26px; }
+.nav a.link { color: var(--ink); text-decoration: none; font-size: 0.95rem; font-weight: 500; white-space: nowrap; }
+.nav a.link:hover { color: var(--accent); }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 46px; padding: 0 22px; border-radius: 4px; border: 1.5px solid transparent;
+  font: 600 0.98rem/1 var(--font-body); text-decoration: none; cursor: pointer;
+}
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-primary:hover { filter: brightness(1.08); }
+.btn-sm { min-height: 40px; padding: 0 18px; font-size: 0.92rem; }
+.brand span { display: none; }
+@media (max-width: 1240px) { .nav a.link { display: none; } }
+
+/* Hero */
+.hero { background: var(--hero-bg); color: var(--hero-fg); }
+.hero .wrap { padding-block: clamp(40px, 7vw, 84px); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: clamp(28px, 5vw, 64px); align-items: center; }
+.hero .eyebrow { color: var(--hero-cta); }
+.hero h1 { font-size: clamp(2.3rem, 5.2vw, 3.8rem); letter-spacing: -0.015em; margin-top: 18px; }
+.hero h1 em { font-style: italic; font-weight: 300; }
+.hero .lead { margin-top: 22px; font-size: 1.2rem; line-height: 1.55; color: var(--hero-muted); max-width: 34em; }
+.hero .lead strong { color: var(--hero-fg); font-weight: 500; }
+.hero .tagline { margin-top: 24px; font-family: var(--font-display); font-style: italic; font-weight: 300; font-size: clamp(1.35rem, 2.4vw, 1.7rem); line-height: 1.3; color: var(--hero-fg); max-width: 24em; }
+.hero .tagline strong { font-style: normal; font-weight: 400; color: var(--hero-cta); }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
+.btn-hero { background: var(--hero-cta); color: var(--hero-cta-ink); }
+.btn-hero:hover { filter: brightness(1.06); }
+.btn-ghost { border-color: var(--hero-line); color: var(--hero-fg); }
+.btn-ghost:hover { border-color: var(--hero-muted); }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: 22px; margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--hero-line); }
+.facts dt { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--hero-muted); }
+.facts dd { margin: 6px 0 0; font-size: 0.98rem; line-height: 1.45; }
+.vessel-box { position: relative; aspect-ratio: 1 / 1.05; max-width: 100%; }
+.vessel-box canvas { display: block; width: 100%; height: 100%; }
+.vessel-cap { margin-top: 10px; font-family: var(--font-mono); font-size: 0.72rem; line-height: 1.5; color: var(--hero-muted); }
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr); }
+  .vessel-box { aspect-ratio: 1 / 0.8; max-height: 340px; }
+}
+
+/* Sections */
+.block { padding-block: clamp(52px, 8vw, 96px); }
+.block-head { display: grid; gap: 14px; max-width: 46em; margin-bottom: 40px; }
+.block-head p { color: var(--muted); font-size: 1.1rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 20px; }
+.proc { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 26px; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.proc .tag { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+.proc .for { font-weight: 600; font-size: 0.95rem; }
+.proc .sum { color: var(--muted); }
+.proc h4 { margin: 4px 0 0; font-family: var(--font-mono); font-weight: 500; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.proc ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.proc li { position: relative; padding-left: 26px; font-size: 0.98rem; line-height: 1.45; }
+.proc li::before { content: "\2192"; position: absolute; left: 0; color: var(--accent); font-weight: 600; }
+.proc .access { margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line); font-family: var(--font-mono); font-size: 0.78rem; color: var(--muted); }
+.proc.other { background: var(--accent-soft); border-color: transparent; }
+.proc.wide { grid-column: 1 / -1; }
+.proc.wide .cols { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: clamp(20px, 4vw, 48px); align-items: start; }
+.proc.wide .col { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+@media (max-width: 760px) { .proc.wide .cols { grid-template-columns: minmax(0, 1fr); } }
+.fine { color: var(--muted); font-size: 0.95rem; max-width: 46em; }
+.map-grid { display: grid; grid-template-columns: minmax(240px, 340px) 1fr; gap: 40px 56px; align-items: start; }
+.body-card { position: relative; background: var(--hero-bg); border: 1px solid var(--hero-line); border-radius: 18px; padding: 14px 10px 10px; overflow: hidden; box-shadow: 0 0 0 1px rgba(94,214,230,.06), 0 18px 50px -24px rgba(94,214,230,.35); }
+.body-card svg { display: block; width: 100%; height: auto; max-height: 680px; margin: 0 auto; }
+.body-card .hud { font: 500 9px var(--font-mono); letter-spacing: .16em; fill: var(--hero-cta); opacity: .75; }
+.body-card .pin { cursor: pointer; }
+.body-card .pin .ring { fill: none; stroke: var(--hero-cta); stroke-width: 1.2; opacity: 0; transform-box: fill-box; transform-origin: center; animation: pulse 3s ease-out infinite; }
+.body-card .pin .dot { fill: var(--hero-bg); stroke: var(--hero-cta); stroke-width: 1.8; transition: fill .15s; filter: url(#glow-s); }
+.body-card .pin text { fill: var(--hero-cta); font: 600 9.5px var(--font-mono); text-anchor: middle; dominant-baseline: central; pointer-events: none; transition: fill .15s; }
+.body-card .pin:hover .dot, .body-card .pin.hl .dot, .body-card .pin:focus-visible .dot { fill: var(--hero-cta); }
+.body-card .pin:hover text, .body-card .pin.hl text, .body-card .pin:focus-visible text { fill: var(--hero-cta-ink); }
+.body-card .pin:focus-visible { outline: none; }
+.body-card .scan { animation: scan 6s linear infinite; }
+@keyframes scan { from { transform: translateY(-60px); } to { transform: translateY(690px); } }
+@keyframes pulse { 0% { opacity: .7; transform: scale(.8); } 70%, 100% { opacity: 0; transform: scale(2); } }
+@media (prefers-reduced-motion: reduce) { .body-card .scan, .body-card .pin .ring { animation: none; } .body-card .scan { opacity: 0; } }
+.body-note { margin: 6px 0 4px; text-align: center; color: var(--hero-muted); font-size: .85rem; }
+.map-legend { list-style: none; margin: 0; padding: 0; columns: 2 260px; column-gap: 32px; }
+.map-legend li { break-inside: avoid; margin: 0 0 8px; }
+.map-legend a { display: grid; grid-template-columns: 30px 1fr; gap: 12px; align-items: start; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); text-decoration: none; }
+.map-legend a:hover, .map-legend a:focus-visible, .map-legend a.hl { border-color: var(--accent); background: var(--accent-soft); }
+.map-legend .n { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); font: 600 .72rem var(--font-mono); }
+.map-legend b { display: block; font-weight: 600; font-size: .98rem; }
+.map-legend span.d { display: block; color: var(--muted); font-size: .88rem; margin-top: 2px; }
+@media (max-width: 760px) { .map-grid { grid-template-columns: 1fr; } .body-card { max-width: 340px; margin: 0 auto; } }
+.more-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 28px; margin-top: 28px; }
+
+.case-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 20px; }
+.case { display: grid; grid-template-rows: auto 1fr; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; text-decoration: none; color: var(--ink); min-width: 0; }
+.case:hover { border-color: var(--accent); }
+.case-media { background: var(--hero-bg); display: grid; place-items: center; aspect-ratio: 16 / 9; }
+.play { display: block; position: relative; width: 64px; height: 64px; border-radius: 50%; background: var(--hero-cta); }
+.play::after { content: ""; position: absolute; left: 26px; top: 20px; border-left: 20px solid var(--hero-cta-ink); border-top: 12px solid transparent; border-bottom: 12px solid transparent; }
+.case:hover .play { filter: brightness(1.08); }
+.case-text { display: grid; gap: 8px; align-content: center; padding: 24px; min-width: 0; }
+.case-title { font-family: var(--font-display); font-size: 1.6rem; line-height: 1.2; }
+.case-sub { color: var(--muted); font-size: 0.95rem; }
+@media (max-width: 640px) { .case { grid-template-columns: minmax(0, 1fr); } }
+.why-wrap { background: var(--accent-soft); }
+.why { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: clamp(28px, 5vw, 64px); align-items: start; }
+.why .head { display: grid; gap: 14px; }
+.why .body { display: grid; gap: 18px; min-width: 0; }
+.why .body p { color: var(--muted); font-size: 1.1rem; }
+.why .body p.key { color: var(--ink); font-family: var(--font-display); font-size: clamp(1.35rem, 2.4vw, 1.7rem); line-height: 1.3; }
+.why .body .btn { justify-self: start; }
+@media (max-width: 860px) { .why { grid-template-columns: minmax(0, 1fr); } }
+.steps-wrap { background: var(--surface); border-block: 1px solid var(--line); }
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 32px; counter-reset: step; }
+.steps li { counter-increment: step; border-top: 2px solid var(--accent); padding-top: 16px; display: grid; gap: 8px; align-content: start; }
+.steps li::before { content: "Step " counter(step); font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+.steps h3 { font-size: 1.3rem; }
+.steps p { color: var(--muted); font-size: 0.98rem; }
+
+.about { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: clamp(28px, 5vw, 64px); align-items: start; }
+.portrait { aspect-ratio: 4 / 5; max-width: 100%; border-radius: 6px; background: var(--hero-bg); color: var(--hero-fg); display: grid; place-items: center; align-content: center; gap: 10px; text-align: center; padding: 16px; }
+.portrait b { font-family: var(--font-display); font-weight: 300; font-size: 4.4rem; line-height: 1; }
+.portrait span { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; color: var(--hero-muted); }
+img.portrait { display: block; width: 100%; height: auto; padding: 0; object-fit: cover; object-position: 50% 15%; background: var(--surface); }
+.about-text { display: grid; gap: 18px; min-width: 0; }
+.about-text p { color: var(--muted); }
+.details.cv { margin-top: 4px; }
+.details.cv div { grid-template-columns: 130px minmax(0, 1fr); }
+@media (max-width: 860px) { .details.cv div { grid-template-columns: minmax(0, 1fr); gap: 4px; } }
+@media (max-width: 760px) { .about { grid-template-columns: minmax(0, 1fr); } .portrait { max-width: 240px; } }
+
+.faq { display: grid; gap: 0; max-width: 52em; border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); padding: 18px 0; }
+.faq summary { cursor: pointer; font-family: var(--font-display); font-size: 1.3rem; line-height: 1.3; list-style: none; display: flex; justify-content: space-between; gap: 16px; align-items: baseline; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font-family: var(--font-mono); color: var(--accent); flex: none; }
+.faq details[open] summary::after { content: "\2212"; }
+.faq details p { margin-top: 12px; color: var(--muted); max-width: 42em; }
+
+.contact { background: var(--surface); border-top: 1px solid var(--line); }
+.contact-grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(28px, 5vw, 64px); align-items: start; }
+.details { display: grid; gap: 16px; margin: 28px 0 0; }
+.details div { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 12px; align-items: baseline; padding-top: 14px; border-top: 1px solid var(--line); }
+.details dt { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.details dd { margin: 0; overflow-wrap: anywhere; }
+.emergency { margin-top: 28px; border: 1.5px solid var(--ink); border-radius: 6px; padding: 16px 18px; display: grid; gap: 6px; }
+.emergency .eyebrow { color: var(--ink); }
+.form-card { background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: clamp(20px, 3vw, 32px); display: grid; gap: 14px; min-width: 0; }
+.form-card label { font-family: var(--font-display); font-size: 1.4rem; line-height: 1.2; }
+.form-card .help { color: var(--muted); font-size: 0.95rem; }
+.form-card textarea {
+  width: 100%; min-height: 190px; resize: vertical; padding: 14px 16px;
+  font: 400 1rem/1.55 var(--font-body); color: var(--ink); background: var(--surface);
+  border: 1.5px solid var(--line); border-radius: 4px;
+}
+.form-card textarea:focus { border-color: var(--accent); outline: 3px solid var(--focus); outline-offset: 1px; }
+.form-card .row { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+#form-status { font-size: 0.95rem; min-height: 1.4em; color: var(--muted); }
+#form-status.ok { color: var(--accent); font-weight: 600; }
+#form-status.err { color: var(--ink); font-weight: 600; }
+@media (max-width: 860px) { .contact-grid { grid-template-columns: minmax(0, 1fr); } .details div { grid-template-columns: minmax(0, 1fr); gap: 4px; } }
+
+footer { padding-block: 32px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+footer .wrap { display: grid; gap: 8px; }
+footer strong { color: var(--ink); font-weight: 600; }
+
+.linkcard { text-decoration: none; color: inherit; transition: border-color .15s; }
+.linkcard:hover, .linkcard:focus-visible { border-color: var(--accent); }
+.linkcard h3 { font-size: 1.3rem; }
+.linkcard .go { margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line); font-family: var(--font-mono); font-size: .78rem; color: var(--accent); }
+.hero.sub .wrap { padding-block: clamp(36px, 6vw, 64px); }
+.hero.sub h1 { font-size: clamp(2rem, 4.4vw, 3.1rem); margin-top: 14px; max-width: 20em; }
+.hero.sub .eyebrow a { color: inherit; }
+.hero.sub .lead { max-width: 44em; }
+.others { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 14px; margin-top: 24px; }
+.others a { display: block; padding: 14px 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); text-decoration: none; font-weight: 500; }
+.others a:hover, .others a:focus-visible { border-color: var(--accent); background: var(--accent-soft); }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">Jenanan Vairavamurthy, MD <span>Interventional Radiology</span></a>
+    <nav class="nav" aria-label="Main">
+      <a class="link" href="/embolization">Embolization</a>
+      <a class="link" href="/#treatments">Other treatments</a>
+      <a class="link" href="/live-cases">Live cases</a>
+      <a class="link" href="/what-to-expect">What to expect</a>
+      <a class="link" href="/about">About</a>
+      <a class="link" href="/faq">FAQ</a>
+      <a class="btn btn-primary btn-sm" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero sub" aria-labelledby="msk-title">
+    <div class="wrap">
+      <p class="eyebrow"><a href="/">Home</a> &middot; Joints, tendons &amp; muscle pain</p>
+      <h1 id="msk-title">Musculoskeletal embolization for chronic pain</h1>
+      <p class="lead">Long-standing pain in a joint or tendon is often kept going by inflammation, which grows a network of tiny abnormal blood vessels in the painful tissue. These vessels feed the inflammation and the pain nerves that travel with them. Under X-ray guidance, a catheter is used to reach those small vessels and block them, so the tissue can calm down while the rest of the area keeps its normal blood supply. It is an outpatient treatment with no incision, and it is meant for people whose pain has not improved enough with other care. Some of these uses are newer than others, and what to expect for your condition is reviewed at your consultation.</p>
+      <div class="hero-cta">
+        <a class="btn btn-hero" href="#contact">Request a consultation</a>
+        <a class="btn btn-ghost" href="/">Back to home</a>
+      </div>
+    </div>
+  </section>
+  <section id="msk" class="block" style="padding-top: clamp(40px, 6vw, 72px);">
+    <div class="wrap">
+      
+      <div class="cards">
+        <article class="proc" id="gae">
+          <p class="tag">Knee</p>
+          <h3>Genicular artery embolization</h3>
+          <p class="for">For knee arthritis pain</p>
+          <p class="sum">Reduces blood flow to the lining of the knee joint, which drives inflammation and pain. It is used for chronic knee pain from osteoarthritis that has not improved enough with other care.</p>
+          <h4>May be worth asking about if</h4>
+          <ul>
+            <li>Knee pain continues despite physical therapy, injections or medication</li>
+            <li>You are not ready for, or do not want, a knee replacement</li>
+            <li>Pain limits walking, stairs or sleep</li>
+          </ul>
+          <p class="access">Access: wrist or groin</p>
+        </article>
+
+        <article class="proc" id="hipoa">
+          <p class="tag">Hip</p>
+          <h3>Hip arthritis embolization</h3>
+          <p class="for">For hip osteoarthritis pain</p>
+          <p class="sum">Osteoarthritis of the hip can cause deep groin, thigh or buttock pain. Embolization reduces blood flow to the inflamed lining of the hip joint to ease that pain, as an option for people who want to delay or avoid a hip replacement.</p>
+          <h4>May be worth asking about if</h4>
+          <ul>
+            <li>You have hip arthritis with pain in the groin, thigh or buttock</li>
+            <li>Injections, medication and therapy have not helped enough</li>
+            <li>You are not ready for, or are not a good candidate for, a hip replacement</li>
+          </ul>
+          <p class="access">Access: wrist or groin</p>
+        </article>
+
+        <article class="proc" id="shoulderoa">
+          <p class="tag">Shoulder</p>
+          <h3>Shoulder arthritis embolization</h3>
+          <p class="for">For shoulder osteoarthritis pain</p>
+          <p class="sum">Osteoarthritis of the shoulder causes aching pain, stiffness and trouble sleeping. Embolization reduces blood flow to the inflamed lining of the joint to ease pain and make daily movement and therapy more comfortable.</p>
+          <h4>May be worth asking about if</h4>
+          <ul>
+            <li>You have shoulder arthritis that aches with activity or at night</li>
+            <li>Injections, medication and therapy have not helped enough</li>
+            <li>You want to avoid or delay a shoulder replacement</li>
+          </ul>
+          <p class="access">Access: wrist or groin</p>
+        </article>
+
+        <article class="proc" id="shoulder">
+          <p class="tag">Shoulder</p>
+          <h3>Frozen shoulder embolization</h3>
+          <p class="for">For adhesive capsulitis (frozen shoulder)</p>
+          <p class="sum">A frozen shoulder is a painful, stiff shoulder caused by inflammation of the joint lining. Blocking the tiny vessels feeding that inflamed lining can ease pain, which in turn helps you move the shoulder and take part in therapy.</p>
+          <h4>May be worth asking about if</h4>
+          <ul>
+            <li>Your shoulder is painful and stiff, and reaching or rotating is limited</li>
+            <li>Pain wakes you at night or interferes with daily tasks</li>
+            <li>Therapy and steroid injections have not helped enough</li>
+          </ul>
+          <p class="access">Access: wrist or groin</p>
+        </article>
+
+        <article class="proc" id="hip">
+          <p class="tag">Hip</p>
+          <h3>Greater trochanteric pain embolization</h3>
+          <p class="for">For pain on the outside of the hip</p>
+          <p class="sum">Greater trochanteric pain syndrome is persistent pain over the bony point on the outside of the hip, often from irritated tendons and the bursa around them. Embolization targets the small inflamed vessels in that area to reduce the pain.</p>
+          <h4>May be worth asking about if</h4>
+          <ul>
+            <li>You have pain on the outside of the hip that is worse lying on that side, climbing stairs or walking</li>
+            <li>Stretching, physical therapy or injections gave only short relief</li>
+            <li>You want to avoid surgery on the tendon or bursa</li>
+          </ul>
+          <p class="access">Access: wrist or groin</p>
+        </article>
+
+        <article class="proc" id="plantar">
+          <p class="tag">Foot</p>
+          <h3>Plantar fasciitis embolization</h3>
+          <p class="for">For persistent heel pain</p>
+          <p class="sum">Plantar fasciitis is chronic inflammation of the band of tissue along the bottom of the foot, typically causing heel pain with the first steps of the day. For long-lasting cases, embolization blocks the small vessels that feed the inflamed tissue.</p>
+          <h4>May be worth asking about if</h4>
+          <ul>
+            <li>You have had heel pain for many months despite stretching, orthotics and rest</li>
+            <li>Injections or shockwave treatment did not help enough</li>
+            <li>Pain limits standing, walking or exercise</li>
+          </ul>
+          <p class="access">Access: wrist or groin</p>
+        </article>
+      </div>
+
+      <div class="more-row">
+        <p class="fine">Other painful joints and tendons, such as the elbow, may also be reviewed case by case. Embolization is usually considered after rest, therapy and injections have been tried, and not everyone is a candidate.</p>
+        <a class="btn btn-primary btn-sm" href="#contact">Ask whether it fits</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top: 0;" aria-labelledby="others-title">
+    <div class="wrap">
+      <h2 id="others-title" style="font-size: clamp(1.5rem, 2.6vw, 2rem);">Explore more</h2>
+      <div class="others"><a href="/embolization">Embolization</a><a href="/veins-and-clots">Veins &amp; clots</a><a href="/portal-vein">Portal vein</a><a href="/gallbladder-and-bile-ducts">Gallbladder &amp; bile ducts</a><a href="/bone-and-spine">Bone &amp; spine</a><a href="/cancer-care">Cancer care</a><a href="/why-embolization">Why haven&rsquo;t you heard?</a><a href="/live-cases">Live cases</a><a href="/what-to-expect">What to expect</a><a href="/about">About</a><a href="/faq">FAQ</a></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact block" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title" style="margin-top: 14px;">Ask about a consultation</h2>
+        <p style="margin-top: 14px; color: var(--muted);">Send a short message and the office will get back to you. Expect a reply within 24 to 48 hours.</p>
+        <dl class="details">
+          <div><dt>New patients</dt><dd>Accepting new patients</dd></div>
+        </dl>
+        <div class="emergency">
+          <p class="eyebrow">Emergency</p>
+          <p>If you think you are having a medical emergency, call 911. Please do not use this form for urgent problems.</p>
+        </div>
+      </div>
+
+      <form class="form-card" id="contact-form" novalidate>
+        <label for="message">Your message</label>
+        <p class="help" id="message-help">Include your name, the best way to reach you (phone or email), and what you would like to talk about. Please do not include medical details or test results here.</p>
+        <textarea id="message" name="message" required minlength="10" aria-describedby="message-help form-status" placeholder="Name, phone or email, and what you are hoping to learn about"></textarea>
+        <input type="hidden" name="_subject" value="Website inquiry">
+        <div class="hp" aria-hidden="true"><label for="website">Leave this field empty</label><input id="website" type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+        <div class="row">
+          <button class="btn btn-primary" type="submit" id="send-btn">Send message</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Jenanan Vairavamurthy, MD</strong> &middot; Interventional Radiology</p>
+    <p>This website is for general information and is not medical advice. Results vary from person to person. Do not use this site for emergencies; call 911.</p>
+    <p>&copy; 2026 Jenanan Vairavamurthy, MD</p>
+  </div>
+</footer>
+
+<script>
+/* Contact box: paste the web app address from inquiry-tracker.gs between the quotes below
+   (it starts with https://script.google.com/). A form service address, such as a Formspree
+   form URL, also works. */
+var FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbzU5KsFK-R51ZjnlQ38tCzFh2hZHOvsK-OIi8997nvzIUvIlE6Ar1G5k5cEUJt-CPM/exec";
+
+(function () {
+  var form = document.getElementById("contact-form");
+  var status = document.getElementById("form-status");
+  var btn = document.getElementById("send-btn");
+  var box = document.getElementById("message");
+  if (!form) return;
+
+  function say(text, cls) { status.textContent = text; status.className = cls || ""; }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var text = box.value.trim();
+    if (text.length < 10) { say("Please add a few words so the office knows how to reach you.", "err"); box.focus(); return; }
+    if (!FORM_ENDPOINT) { say("The contact box is not connected yet. Please try again later.", "err"); return; }
+    btn.disabled = true; say("Sending...");
+    var viaSheet = /^https:\/\/script\.google\.com\//.test(FORM_ENDPOINT);
+    var opts = viaSheet
+      ? { method: "POST", mode: "no-cors", body: new URLSearchParams(new FormData(form)) }
+      : { method: "POST", headers: { "Accept": "application/json" }, body: new FormData(form) };
+    fetch(FORM_ENDPOINT, opts)
+      .then(function (res) {
+        if (viaSheet || res.ok) { form.reset(); say("Thank you. Your message was received and the office will reach out to you.", "ok"); }
+        else { say("Your message did not go through. Please try again in a few minutes.", "err"); }
+      })
+      .catch(function () { say("Your message did not go through. Please try again in a few minutes.", "err"); })
+      .then(function () { btn.disabled = false; });
+  });
+})();
+
+/* Hero illustration: a branching vessel tree with one treated branch. */
+(function () {
+  var c = document.getElementById("vessels");
+  if (!c || !c.getContext) return;
+  var ctx = c.getContext("2d");
+
+  function rng(seed) {
+    return function () {
+      seed |= 0; seed = (seed + 0x6D2B79F5) | 0;
+      var t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+  function tok(name, fallback) {
+    var v = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    return v || fallback;
+  }
+
+  function draw() {
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var w = c.clientWidth, h = c.clientHeight;
+    if (!w || !h) return;
+    c.width = Math.round(w * dpr); c.height = Math.round(h * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, w, h);
+    ctx.lineCap = "round";
+
+    var rand = rng(11);
+    var normal = tok("--vessel", "#D3ECF1");
+    var treatedColor = tok("--vessel-treated", "#5ED6E6");
+    var treatedDone = false;
+
+    function branch(x, y, ang, len, wd, depth, treated) {
+      if (depth > 9 || len < 5) return;
+      var bend = (rand() - 0.5) * 0.45;
+      var mx = x + Math.cos(ang + bend) * len * 0.5;
+      var my = y + Math.sin(ang + bend) * len * 0.5;
+      var ex = x + Math.cos(ang) * len;
+      var ey = y + Math.sin(ang) * len;
+
+      ctx.beginPath();
+      ctx.moveTo(x, y);
+      ctx.quadraticCurveTo(mx, my, ex, ey);
+      ctx.lineWidth = Math.max(0.7, wd);
+      ctx.strokeStyle = treated ? treatedColor : normal;
+      ctx.globalAlpha = treated ? 0.3 : Math.max(0.35, 0.95 - depth * 0.07);
+      if (treated) ctx.setLineDash([2, 5]); else ctx.setLineDash([]);
+      ctx.stroke();
+      ctx.setLineDash([]);
+
+      var n = depth < 2 ? 2 : (rand() < 0.22 ? 3 : 2);
+      var spread = 0.38 + rand() * 0.22;
+      for (var i = 0; i < n; i++) {
+        var a = ang + (i - (n - 1) / 2) * spread * 1.25 + (rand() - 0.5) * 0.2;
+        var l = len * (0.76 + rand() * 0.08);
+        var childTreated = treated;
+        if (!treated && !treatedDone && depth === 2 && Math.cos(a) > 0.25) {
+          treatedDone = true; childTreated = true;
+          ctx.globalAlpha = 1; ctx.fillStyle = treatedColor;
+          ctx.beginPath(); ctx.arc(ex, ey, Math.max(3.5, wd * 0.9), 0, Math.PI * 2); ctx.fill();
+        }
+        branch(ex, ey, a, l, wd * 0.72, depth + 1, childTreated);
+      }
+    }
+
+    branch(w * 0.5, h + 4, -Math.PI / 2, h * 0.21, Math.max(5, w * 0.022), 0, false);
+    ctx.globalAlpha = 1;
+  }
+
+  draw();
+  var t;
+  window.addEventListener("resize", function () { clearTimeout(t); t = setTimeout(draw, 120); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(draw);
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", draw);
+})();
+</script>
+</body>
+</html>
